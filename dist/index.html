@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ky">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f5ed">
+  <meta name="description" content="Алтынбек менен Элемдин үйлөнүү тоюна чакыруу. 11-октябрь. Октябрьское айылы, Жабиров Сатарбек көчөсү, 42-үй.">
+  <meta property="og:title" content="Алтынбек & Элем — Чакыруу">
+  <meta property="og:description" content="11-октябрь · Сиздерди үйлөнүү тоюбузга чын жүрөктөн чакырабыз!">
+  <meta property="og:type" content="website">
+  <title>Алтынбек & Элем — Чакыруу</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%231a3d32'/%3E%3Ctext x='32' y='45' text-anchor='middle' fill='%23e3c28a' font-size='42' font-family='Georgia'%3E%26%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css?v=glow-4">
+  <link rel="stylesheet" href="card.css?v=glow-4">
+  <link rel="stylesheet" href="motion.css?v=glow-4">
+  <link rel="stylesheet" href="background.css?v=glow-4">
+  <script src="card.js?v=glow-4" defer></script>
+</head>
+<body>
+  <div class="site-backdrop" aria-hidden="true">
+    <img src="assets/emerald-background.jpg" alt="" width="1536" height="1024" fetchpriority="high">
+  </div>
+  <div class="welcome" id="welcome" hidden>
+    <div class="welcome-border" aria-hidden="true"></div>
+    <img class="flowers welcome-flowers left-top" src="assets/flowers.png" alt="" width="1254" height="1254" fetchpriority="high">
+    <img class="flowers welcome-flowers right-bottom" src="assets/flowers.png" alt="" width="1254" height="1254">
+    <div class="welcome-content">
+      <div class="welcome-sparkles" aria-hidden="true">
+        <span style="--sparkle-x:4%;--sparkle-y:13%"></span>
+        <span style="--sparkle-x:95%;--sparkle-y:18%"></span>
+        <span style="--sparkle-x:7%;--sparkle-y:31%"></span>
+        <span style="--sparkle-x:93%;--sparkle-y:38%"></span>
+        <span style="--sparkle-x:3%;--sparkle-y:54%"></span>
+        <span style="--sparkle-x:96%;--sparkle-y:58%"></span>
+        <span style="--sparkle-x:6%;--sparkle-y:75%"></span>
+        <span style="--sparkle-x:94%;--sparkle-y:80%"></span>
+        <span style="--sparkle-x:11%;--sparkle-y:91%"></span>
+        <span style="--sparkle-x:89%;--sparkle-y:92%"></span>
+        <span style="--sparkle-x:2%;--sparkle-y:88%"></span>
+        <span style="--sparkle-x:98%;--sparkle-y:11%"></span>
+      </div>
+      <p class="eyebrow">СИЗ ҮЧҮН ӨЗГӨЧӨ ЧАКЫРУУ</p>
+      <div class="monogram" aria-hidden="true">А<span>&</span>Э</div>
+      <div class="fine-rule" aria-hidden="true"><span>✧</span></div>
+      <h1 class="welcome-names">Алтынбек <span>&</span> Элем</h1>
+      <p class="welcome-date">11 · ОКТЯБРЬ</p>
+      <button id="open-invitation" class="open-button" type="button">Чакырууну ачуу <span aria-hidden="true">✧</span></button>
+      <p class="sound-hint"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l11-2v13M9 7l11-2"/><ellipse cx="6" cy="18" rx="3" ry="2.5"/><ellipse cx="17" cy="16" rx="3" ry="2.5"/></svg>Музыка менен ачылат</p>
+    </div>
+  </div>
+
+  <button class="music-button" id="music-toggle" type="button" aria-label="Музыканы күйгүзүү" aria-pressed="false" hidden>
+    <span class="equalizer" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+    <span class="music-label">Музыка</span>
+  </button>
+  <audio id="music" src="assets/ceremony.mp3" preload="none" loop></audio>
+
+  <main id="invitation">
+    <article class="invitation-card" aria-labelledby="card-names">
+      <img class="card-flowers card-flowers-top" src="assets/flowers.png" alt="" width="1254" height="1254">
+      <img class="card-flowers card-flowers-bottom" src="assets/flowers.png" alt="" width="1254" height="1254">
+      <div class="card-sparkles" aria-hidden="true">
+        <span style="--sparkle-x:4%;--sparkle-y:18%"></span>
+        <span style="--sparkle-x:95%;--sparkle-y:25%"></span>
+        <span style="--sparkle-x:3%;--sparkle-y:38%"></span>
+        <span style="--sparkle-x:96%;--sparkle-y:48%"></span>
+        <span style="--sparkle-x:4%;--sparkle-y:62%"></span>
+        <span style="--sparkle-x:95%;--sparkle-y:72%"></span>
+        <span style="--sparkle-x:8%;--sparkle-y:84%"></span>
+        <span style="--sparkle-x:91%;--sparkle-y:88%"></span>
+      </div>
+      <div class="card-layout">
+        <div class="letter-panel">
+          <header class="card-header">
+            <p class="card-kicker">ҮЙЛӨНҮҮ ТОЮНА</p>
+            <p class="card-title">Чакыруу</p>
+            <h1 id="card-names" class="card-names" tabindex="-1">Алтынбек <span>&</span> Элем</h1>
+          </header>
+          <div class="card-rule" aria-hidden="true"><span>♡</span></div>
+          <div class="card-copy">
+            <p>Сиздерди Алтынбек менен Элемдин үйлөнүү тоюна чын жүрөктөн чакырабыз!</p>
+            <p>Келип, ак батаңыздарды берип, ак дасторкондон даам татып, кадырлуу конокторубуз болуп кетиңиздер.</p>
+          </div>
+        </div>
+        <div class="details-panel">
+          <div class="event-band">
+            <div class="card-date" aria-label="11-октябрь">
+              <span class="card-day">11</span>
+              <span class="card-month">октябрь</span>
+            </div>
+            <div class="card-address">
+              <p class="card-label">ДАРЕГИ</p>
+              <a href="https://www.google.com/maps/search/?api=1&query=%D0%9E%D0%BA%D1%82%D1%8F%D0%B1%D1%80%D1%8C%D1%81%D0%BA%D0%BE%D0%B5%20%D0%96%D0%B0%D0%B1%D0%B8%D1%80%D0%BE%D0%B2%20%D0%A1%D0%B0%D1%82%D0%B0%D1%80%D0%B1%D0%B5%D0%BA%2042%20%D0%9A%D1%8B%D1%80%D0%B3%D1%8B%D0%B7%D1%81%D1%82%D0%B0%D0%BD" target="_blank" rel="noopener noreferrer" aria-label="Даректи картадан издөө: Октябрьское айылы, Жабиров Сатарбек көчөсү, 42-үй">Октябрьское айылы,<br>Жабиров Сатарбек көчөсү,<br>42-үй</a>
+            </div>
+          </div>
+          <footer class="card-hosts">
+            <p class="card-label">ТОЙ ЭЭЛЕРИ</p>
+            <p class="card-host-names">Алмаз менен Бактыгүл</p>
+          </footer>
+        </div>
+      </div>
+    </article>
+  </main>
+  <noscript><p class="noscript-note">Музыка жана анимация үчүн JavaScript күйгүзүлүшү керек.</p></noscript>
+</body>
+</html>
